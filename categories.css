@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.l-home-category__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/Rectangle\ 22.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+
+
+#l-home-category_title {
+    font-size: 64px;
+    color:  #514E92;
+    font-weight: 700;
+    font-family: 'Ysabeau', sans-serif;
+    text-align: center;
+   
+}
+
+.l-home-category {
+    width: 343px;
+    height: 75px;
+    background-color: #514E92;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Ysabeau', sans-serif;
+    transition: 0.3s;
+}
+
+.l-home-category_div {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.category_image {
+    width: 150px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.l-home__category {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.l-home-category:hover {
+    background-color: rgb(161, 43, 145);
+    letter-spacing: 0.25em;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1200px) {
+    .l-home-category_div {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .category_image {
+        width: 100px;
+    }
+
+    .l-home-category {
+        height: 45px;
+    }
+}
+
+@media (max-width: 992px) {
+    .l-home-category_div {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .category_image {
+        width: 100px;
+    }
+
+    .l-home-category {
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .l-home-category_div {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .category_image {
+        width: 100px;
+    }
+
+    .l-home-category {
+        height: 45px;
+    }
+} 
+
