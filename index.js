@@ -4,6 +4,12 @@ class User {
       this.password = password;
     }
   }
+
+  const element = document.getElementById("div_register__option");
+
+  setTimeout(function () {
+    element.style.display = "block";
+  }, 2000);
   
   let userArray = [];
   

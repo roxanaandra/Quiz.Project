@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
 }
 
 
@@ -27,6 +27,14 @@ body {
     font-weight: 500;
     font-size: 24px;
     color: rgb(5, 4, 4);
+}
+
+.question-number {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(5, 4, 4);
+    margin-right: 5px;
+
 }
 
 

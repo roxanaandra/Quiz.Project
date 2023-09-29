@@ -104,12 +104,23 @@ class Quiz {
   option2Div.innerText = firstQuizz.option2;
   option3Div.innerText = firstQuizz.option3;
   option4Div.innerText = firstQuizz.option4;
-  
+
   let currentQuiz = 0;
-  
+
   let correctQuestionCounter = 0;
-  
+
   let selectedOption;
+
+  const totalQuestions = arrayQuizz.length;
+
+
+function displayQuestionNumber() {
+  const questionNumberElement = document.getElementById("question_number");
+  questionNumberElement.innerText = `${currentQuiz + 1}/${totalQuestions}`;
+}
+
+
+displayQuestionNumber();
   
   function onSubmit() {
     if (selectedOption == arrayQuizz[currentQuiz].correctOption) {
@@ -140,6 +151,8 @@ class Quiz {
       option4Div.classList.remove("option-selected");
   
       submitButton.disabled = true;
+
+      displayQuestionNumber();
     }
   }
   
