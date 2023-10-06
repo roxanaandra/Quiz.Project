@@ -67,6 +67,10 @@ class User {
       
       usernameRegisterInput.value = "";
       passwordRegisterInput.value = "";
+
+      containerRegistration.style.display = "none";
+      containerLogin.style.display = "flex";
+      loginNowButton.style.display = "";
     }
   }
 

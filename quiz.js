@@ -18,12 +18,14 @@ class Quiz {
   const score = document.getElementById("result_game");
   const questionWrapper = document.getElementById("question_wrapper");
   const string = document.getElementById("score_string");
+  const buttonBack = document.getElementById("button_result__game");
   
   option1Div.addEventListener("click", onOption1Click);
   option2Div.addEventListener("click", onOption2Click);
   option3Div.addEventListener("click", onOption3Click);
   option4Div.addEventListener("click", onOption4Click);
   submitButton.addEventListener("click", onSubmit);
+  buttonBack.addEventListener("click", onBack);
   
  
   
@@ -194,4 +196,9 @@ displayQuestionNumber();
     option1Div.classList.remove("option-selected");
     option2Div.classList.remove("option-selected");
     option3Div.classList.remove("option-selected");
+  }
+
+
+  function onBack() {
+    window.location.href = "Categories.html";
   }

@@ -68,7 +68,7 @@
     width: 650px;
     height: 740px;
     box-shadow: 0px 0px 4px 0px #00000014;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -156,7 +156,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #FFFFFF;
-    display: none;
+    display: flex;
     border: 1px solid rgba(125,76,208, 0.3);
     border-radius: 20%;
 }
@@ -169,8 +169,10 @@
     margin-top: 40px;
     border: none;
     color: #fff;
-    display: none;
+    text-align: center;
 }
+
+
 
 
 @media (max-width: 1200px) {
